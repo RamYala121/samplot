@@ -16,14 +16,14 @@ with open("requirements.txt", "r") as f:
 
 
 setup(
-    name="samplot",
-    version=version,
-    description="plotting package for genomic structural variation",
+    name="samplot-ic", # 1. Changed to your unique fork name
+    version=version,   # Automatically reads "1.3.1" from your __init__.py!
+    description="Samplot fork with InterChromosomal coordinate axis fixes", # 2. Updated description
     long_description=long_description,
     long_description_content_type='text/markdown',
     author="Jonathan Belyeu",
     author_email="jrbelyeu@gmail.com",
-    url="https://github.com/ryanlayer/samplot.git",
+    url="https://github.com/ramyala/samplot", # 3. Optional: Points to your GitHub fork URL
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     package_data={"": ["LICENSE", "README.md"]},
     data_files=[("samplot", ["samplot/templates/samplot_vcf.html"])],
@@ -31,7 +31,8 @@ setup(
     install_requires=requires,
     license="MIT",
     zip_safe=False,
-    entry_points={"console_scripts": ["samplot = samplot.__main__:main"]},
+    # 4. Changed the command name to samplot-ic so users type your tool name to run it
+    entry_points={"console_scripts": ["samplot-ic = samplot.__main__:main"]}, 
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Science/Research",
