@@ -149,7 +149,7 @@ options:
 </details>
 
 ## Installing
-`Samplot` is available from pip and is installable via the pip package manager:
+`Samplot-ic` is available from pip and is installable via the pip package manager:
 ```
 pip install samplot-ic 
 ```
