@@ -8,7 +8,7 @@
 `samplot` is a command line tool for rapid, multi-sample structural variant
 visualization. `samplot` takes SV coordinates and bam files and produces
 high-quality images that highlight any alignment and depth signals that
-substantiate the SV.
+substantiate the SV. This version of samplot supports inter-chromosomal data.
 
 If you use samplot, please cite https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02380-5
 
